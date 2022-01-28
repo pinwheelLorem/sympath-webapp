@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lobster&display=swap');
+ {
+    /* border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  } */
+
+/* 
+/* 
+  h4 {
+    font-weight: bold;
+    position: fixed;
+    font-size: 30px;
+    top: 0;
+    font-family: Lobster;
+    /* top: 0; */
+    /* padding: 20px;
+    letter-spacing: 2px;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+    color: rgb(7, 4, 4);
+    background-color: #d9d9d9;
+
+  } */
+
+  body {
+    background: #9fc7c0;
+    font-family: sans-serif;
+    color: rgba(0,0,0,.7);
+  }
+  #donateForm {
+    text-align: center;
+    padding: 1.5em 3em;
+    background: #fff;
+    width: 60vw;
+    margin: 2em auto;
+    border-radius: .5em;
+    font: 20px/20px 'Open Sans', Arial, Verdana, serif;
+  }
+  label {
+    vertical-align: middle;
+    position: relative;
+  }
+  label + label {
+    margin-left: 1em;
+  }
+  .range-slider .input-range {
+    -webkit-appearance: none;
+    width: 300px;
+    height: 10px;
+    border-radius: 5px;
+    background: #ccc;
+    outline: none;
+  }
+  .range-slider .input-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #353535;
+    cursor: pointer;
+    -webkit-transition: background .15s ease-in-out;
+    transition: background .15s ease-in-out;
+  }
+  .range-slider .input-range::-webkit-slider-thumb:hover {
+    background: #e06161;
+  }
+  .range-slider .input-range:active::-webkit-slider-thumb {
+    background: #e06161;
+  }
+  .range-slider .input-range::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border: 0;
+    border-radius: 50%;
+    background: #353535;
+    cursor: pointer;
+    -webkit-transition: background .15s ease-in-out;
+    transition: background .15s ease-in-out;
+  }
+  .range-slider .input-range::-moz-range-thumb:hover {
+    background: #e06161;
+  }
+  .range-slider .input-range:active::-moz-range-thumb {
+    background: #e06161;
+  }
+  .range-slider .range-value {
+    display: inline-block;
+    position: relative;
+    width: 60px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 3px;
+    background: #353535;
+    padding: 5px 10px;
+    margin-left: 7px;
+  }
+  .range-slider .range-value:after {
+    position: absolute;
+    top: 8px;
+    left: -7px;
+    width: 0;
+    height: 0;
+    border-top: 7px solid transparent;
+    border-right: 7px solid #353535;
+    border-bottom: 7px solid transparent;
+    content: '';
+  }
+  ::-moz-range-track {
+    background: #ccc;
+    border: 0;
+  }
+  input::-moz-focus-inner {
+    border: 0;
+  }
+  
+  #chooseplan {
+    display: none;
+  }
+  #memberjoin, #tieaccount, #chooseplan {
+    margin: 2em auto;
+    border-top: 2px dotted #eee;
+    padding-top: 1em;
+    font-size: .9em;
+    line-height: 1.5em;
+  }

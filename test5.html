@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+  <link href="https://fonts.googleapis.com/css?family=Assistant:300,400" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+  <title>Mode Balade</title>
+
+
+    <style>
+      body{ 
+        background-color: #c7d1c8;
+        background-image: linear-gradient( 5deg, #d6f0d9 0%, #b9e0c8 7%);
+      }
+
+      .km {
+        padding: 4px;
+        background-image: linear-gradient( 45deg, #dfdedb 1%, #c1ee2e 70%);
+      }
+      form{
+        max-width: 350px;
+        padding: 20px;
+        background-image: url(../images/map.png);
+        background-size: 400px;
+        margin: 80px auto;
+        font-family: "Helvetica Neue",Helvetica;
+        color: #fff;
+        font-weight: 300;
+        font-size: 13px;
+        text-transform: uppercase;
+        letter-spacing: 0.15em;
+        border-radius: 30px;
+        box-shadow: 0px 10px 30px rgba(1, 14, 2, 0.15);
+        text-align: center;
+
+      }
+
+
+      input{
+        -webkit-appearance: none;
+        appearance: none;
+        background: white;
+        padding: 12px;
+        margin-top: 6px ;
+        font-size: 14px;
+        font-family:  'Open Sans', sans-serif;;
+        border: none;
+        border: 1px solid #aab85c;
+        border-radius: 30px;
+        width: 90%;
+        margin-bottom: 10px;
+        outline: none;
+      }
+
+
+    input:focus{
+      border-bottom: 1px solid #391262;
+      }
+
+
+      .creditcard{
+        background: #428a4e;
+        color: #fff;
+        border-radius: 15px;
+        max-width: 100%;
+        height: auto;
+        margin: 25px auto;
+        padding: 20px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+
+
+      input.mycreditcard {
+        background: none;
+        text-transform: uppercase;
+        color: #fff !important;
+        width: 100%;
+        margin-bottom: 6px;
+        border-bottom: none;
+        font-size: 15px;
+        letter-spacing: 0.16em;
+        padding: 0px;
+        font-family: 'Assistant', sans-serif;
+      }
+
+
+      .creditcard h1{
+        font-size: 11px;
+        color: #fff;
+        font-family: 'Roboto', sans-serif;
+        text-align: right;
+        padding: 2px;
+        letter-spacing: 0.5em;
+        text-transform: uppercase;
+        font-weight: 300;
+        margin-bottom: 10px;
+      }
+   i{
+      font-size: 15px;
+      color: white;
+  }
+
+  <!-- button{
+   padding: 8px;
+   background-image: linear-gradient( 45deg, #1FC3F0 1%, #366783 70%);
+   color: white;
+   font-size: 17px;
+   font-family: 'Open Sea', sans-serif;
+   border: 1px solid #3e32e7;
+   width: auto;
+   cursor: pointer;
+   border-radius: 30px;
+   outline: none;
+ } -->
+
+ a {
+     text-decoration: none;
+     color: rgb(14, 2, 2);
+ }
+ a:hover {
+     color: rgb(10, 77, 19);
+ }
+
+  </style>
+  </head>
+
+
+
+
+  <body>
+  <form>
+  <p style="text-align: right; padding: 0px; margin:20px; font-size: 15px; font-weight: 400; letter-spacing: 0.025em; color: rgb(126, 67, 67); text-transform: none;">
+      Mode Canicule
+      <span>
+        <i style="font-size: 20px; color: rgb(145, 12, 12);"class="fas fa-toggle-on"></i>
+      </span>
+  </p>
+  <p style="margin-top: 50px">
+      <span>
+        <i style=" font-size:30px; color:rgb(16, 85, 22)"class="fas fa-map-marker-alt"></i>
+      </span>
+      <input type="text" placeholder = "27 rue de la Chine 75020" id="yourName" oninput = "confirmyourName.value = yourName.value"></p>
+  <p>
+      <span>
+        <i style=" font-size:30px; color:rgb(68, 22, 22)"class="fas fa-map-pin"></i>
+      </span>
+    <input type="text" placeholder = "Entrer une adresse..." id="resNumber" oninput = "confirmresNumber.value = resNumber.value"></p>
+  
+
+
+  <!-- <div class='creditcard'>
+  <h1>Récapitulatif</h1>
+  <!-- <p>
+  <input type="text" class="mycreditcard" id="confirmyourName" readonly><br/>
+  <input type="text" class="mycreditcard" id="confirmresNumber" readonly><br/>
+  <input type="text" class="mycreditcard" id="confirmcouponCode" readonly>
+  <input type="text" class="mycreditcard" id="confirmPax" readonly>
+</p> -->
+ -->
+
+
+
+<p style="margin-bottom: 250px;">
+     <section>
+         <a href="test6.html">
+        Suivant</a>
+    </section>
+    </p>
+</form>
+
+
+</body>
+</html>

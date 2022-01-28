@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+  <link href="https://fonts.googleapis.com/css?family=Assistant:300,400" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+  <title>Mode Balade</title>
+
+
+    <style>
+      body{
+        background-color: #c7d1c8;
+        background-image: linear-gradient( 5deg, #d6f0d9 0%, #b9e0c8 7%);
+      }
+      
+      form{
+        max-width: 350px;
+        padding: 20px;
+        background: #0d200a;
+        margin: 80px auto;
+        font-family: "Helvetica Neue",Helvetica;
+        color: #fff;
+        font-weight: 300;
+        font-size: 13px;
+        text-transform: uppercase;
+        letter-spacing: 0.15em;
+        border-radius: 30px;
+        box-shadow: 0px 8px 20px rgba(0,0,0,0.15);
+        text-align: center;
+      }
+
+
+     .top,
+     .esc {
+        -webkit-appearance: none;
+        appearance: none;
+        background-image: linear-gradient( 45deg, #b5ebb8 1%, #08aa08 70%);
+        padding: 4px;
+        margin-top: 6px ;
+        font-size: 14px;
+        font-family:  'Open Sans', sans-serif;;
+        border: none;
+        border-radius: 30px;
+        width: 90%;
+        margin-bottom: 10px;
+        outline: none;
+      }
+
+    .top :focus{
+      border-bottom: 1px solid #391262;
+      }
+    .esc {
+        background-image: linear-gradient( 45deg, #e1f4f5 1%, #0486f0 70%);
+    }
+
+      .creditcard{
+        background: #428a4e;
+        color: #fff;
+        border-radius: 15px;
+        max-width: 100%;
+        height: auto;
+        margin: 25px auto;
+        padding: 20px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+
+
+      input.mycreditcard {
+        background: none;
+        text-transform: uppercase;
+        color: #fff !important;
+        width: 100%;
+        margin-bottom: 6px;
+        border-bottom: none;
+        font-size: 15px;
+        letter-spacing: 0.16em;
+        padding: 0px;
+        font-family: 'Assistant', sans-serif;
+      }
+      .lab {
+
+        padding-bottom: 30px;
+        display: flex;
+        align-items: center;
+        padding-bottom: 0px;
+       
+      }
+
+      .creditcard h1{
+        font-size: 11px;
+        color: #fff;
+        font-family: 'Roboto', sans-serif;
+        text-align: right;
+        padding: 2px;
+        letter-spacing: 0.5em;
+        text-transform: uppercase;
+        font-weight: 300;
+        margin-bottom: 10px;
+      }
+
+  .input-radio,
+  .input-checkbox{
+    display: inline-block;
+    margin-right: 0.6rem;
+    min-height: 1rem;
+    min-width:1rem;
+    margin: 20px;
+  }
+  button{
+   padding: 8px;
+   background-image: linear-gradient( 45deg, #1FC3F0 1%, #366783 70%);
+   color: white;
+   font-size: 17px;
+   font-family: 'Open Sea', sans-serif;
+   border: 1px solid #3e32e7;
+   width: auto;
+   cursor: pointer;
+   border-radius: 30px;
+   outline: none;
+ }
+
+ a {
+     text-decoration: none;
+     color: #fff;
+ }
+ a:hover {
+     color: #000;
+ }
+i {
+    margin-left: 3px;
+
+}
+  </style>
+  </head>
+
+
+  <body>
+  <form>
+  <p style="text-align: center; padding: 20px; font-size: 24px; font-weight: 300; letter-spacing: 0.025em; color: #fff; text-transform: none;">Quelle est votre humeur du jour?
+      <span>
+        <i class="far fa-smile-beam"></i>
+      </span>
+  </p>
+  <legend>Balade:</legend>
+  <label>
+    <input
+      name="user-recommend"
+      value="definitely"
+      type="radio"
+      class="input-radio"
+      checked
+    />à pied
+<span>
+    <i class="fas fa-walking"></i>
+</span></label>
+  <label>
+    <input
+      name="user-recommend"
+      value="maybe"
+      type="radio"
+      class="input-radio"
+    />à vélo
+    <span>
+        <i class="fas fa-biking"></i>
+    </span></label
+  >
+  <label>
+  <p>Votre envie d'espace verts? <input class="top" type="range" min="0" max="30" value="0" id="pax" oninput = "confirmPax.value = pax.value"></p>
+  <p>Voulez-vous éviter les escaliers et les pentes raides? <input class="esc" type="range" min="0" max="30" value="0" id="pax" oninput = "confirmPax.value = pax.value"></p>
+
+  <div class='creditcard'>
+
+  <h4>Que souhaitez vous trouver sur votre chemin?</h4>
+      
+     
+      <label class="lab"
+        ><input
+          name="prefer"
+          value="open-source-community"
+          type="checkbox"
+          class="input-checkbox"
+        />Toilettes
+        <span>
+            <i class="fas fa-restroom"></i>
+        </span></label
+      >
+      <label class="lab"
+        ><input
+          name="prefer"
+          value="gitter-help-rooms"
+          type="checkbox"
+          class="input-checkbox"
+        />Fontaines
+        <span>
+            <i class="fas fa-tint"></i>
+        </span></label
+      >
+      <label class="lab"
+        ><input 
+          name="prefer"
+          value="videos"
+          type="checkbox"
+          class="input-checkbox"
+        />Marchés
+    <span>
+        <i class="fas fa-store-alt"></i>
+    </span></label>
+      <label class="lab"
+        ><input
+          name="prefer"
+          value="city-meetups"
+          type="checkbox"
+          class="input-checkbox"
+        />Bas/Restaurants
+        <span>
+            <i class="fas fa-utensils"></i>
+        </span></label
+      >
+      <label class="lab"
+        ><input
+          name="prefer"
+          value="wiki"
+          type="checkbox"
+          class="input-checkbox"
+        />Boutiques
+    <span>
+        <i class="fas fa-store"></i>
+    </span></label>
+      <label class="lab"
+        ><input
+          name="prefer"
+          value="forum"
+          type="checkbox"
+          class="input-checkbox"
+        />Lieux culturels
+    <span>
+        <i class="fas fa-archway"></i>
+    </span></label>
+      
+  <!-- <p>
+  <input type="text" class="mycreditcard top" id="confirmcouponCode" readonly>
+  <input type="text" class="mycreditcard top" id="confirmPax" readonly>
+</p> -->
+</div>
+
+
+<p style="margin-bottom: 25px;">
+    <section>
+        <a href="test5.html">
+       Suivant</a>
+    </section>
+    </p>
+</form>
+
+
+</body>
+</html>
